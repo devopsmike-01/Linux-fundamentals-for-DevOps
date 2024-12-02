@@ -36,13 +36,14 @@ Linux distributions (or "distros") are variations of Linux that bundle the kerne
 Linux plays a pivotal role in modern DevOps workflows. Here’s how
 Here are examples of how Linux is used in each of the DevOps use cases mentioned above:
 
-1. **Server Administration**
+### Server Administration
+
 **Example Use Case**:
 You are hosting a web application on an Nginx web server. As part of routine maintenance:
 1. You need to add a new domain to your server.
 2. Create a directory for the new site, configure a virtual host, and restart Nginx.
 
-### Steps in Linux:
+#### Steps in Linux:
 * Create a new directory:
 
 ```
@@ -67,11 +68,12 @@ nano /etc/nginx/sites-available/newdomain.com
 systemctl reload nginx
 ```  
 
-2. **Containerization**
+### Containerization
+
 **Example Use Case:**
 You are tasked with containerizing an application and deploying it using Docker.
 
-### Steps in Linux:
+#### Steps in Linux:
 1. Write a `Dockerfile` to define the app environment:
 ```
 FROM ubuntu:20.04  
@@ -91,10 +93,11 @@ docker run -d -p 5000:5000 my-python-app
 
 This enables isolated deployment of applications, perfect for scaling and managing dependencies in DevOps workflows.
 
-3. **Configuration Management**
+### Configuration Management
+
 **Example Use Case**:
 You need to configure multiple Linux servers to install **Apache HTTP Server** using **Ansible**.
-### Steps in Linux
+#### Steps in Linux
 
 1. Create an Ansible inventory file:
 ```
@@ -120,11 +123,12 @@ ansible-playbook -i inventory apache-install.yml
 
 This automates server provisioning and configuration with consistent results.
 
-4. **CI/CD Pipelines**
+### CI/CD Pipelines
+
 **Example Use Case:**
 You are setting up a Jenkins pipeline to build, test, and deploy a Node.js application.
 
-### Steps in Linux
+#### Steps in Linux
 
 1. Write a `Jenkinsfile` to define the pipeline:
 ```
@@ -154,11 +158,12 @@ pipeline {
 
 This helps automate the entire lifecycle of application development and delivery.
 
-5. **Monitoring and Logging**
+### Monitoring and Logging
+
 **Example Use Case**:
 You want to monitor CPU usage and memory consumption on a Linux server using **Prometheus** and visualize it with **Grafana**.
 
-### Steps in Linux
+#### Steps in Linux
 1. Install Prometheus and set it up:
 ```
 sudo apt-get install prometheus  
@@ -179,15 +184,18 @@ sudo apt-get install grafana
 Connect Grafana to Prometheus to visualize data.
 This setup helps identify and address performance bottlenecks in real-time.
 
-6. **Cloud Computing**
+### Cloud Computing
+
 **Example Use Case**:
 You need to automate the creation of an **EC2 instance** and deploy a web application using **AWS CLI**.
 
-### Steps in Linux:
+#### Steps in Linux:
 
 1. Use AWS CLI to create an EC2 instance:
+
 ```
-aws ec2 run-instances --image-id ami-0abcdef12345 --count 1 --instance-type t2.micro --key-name MyKeyPair --security-group-ids sg-903004f8 --subnet-id subnet-6e7f829e  ```
+aws ec2 run-instances --image-id ami-0abcdef12345 --count 1 --instance-type t2.micro --key-name MyKeyPair --security-group-ids sg-903004f8 --subnet-id subnet-6e7f829e 
+```
 
 2. SSH into the instance and deploy the application:
 
@@ -196,6 +204,7 @@ ssh -i MyKeyPair.pem ec2-user@<instance-public-ip>
 ```
 
 Install the application (e.g., Apache):
+
 ```
 sudo yum install httpd  
 sudo systemctl start httpd
