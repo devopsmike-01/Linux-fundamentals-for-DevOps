@@ -1,9 +1,7 @@
 # Linux-fundamentals-for-DevOps
- This site repository is maintained by [DevOpswithMike](https://www.youtube.com/@DevOpsWithMike0/videos).
-
- Visit my website for more inquiries and support [DevOpswithMike](https://devopswithmike.tech/).
-
- For Cloud and DevOps interview prepartion, use this platform [Wandaprep](https://www.wandaprep.com/).
+- This repo is maintained by [Devops with Mike](https://www.youtube.com/@DevOpsWithMike0/videos/)
+- For interview preparation, use this platform [Wandaprep](http://www.wandaprep.com/)
+- Visit my website for more inquiries and support [DevOpswithMike](https://devopswithmike.tech/).
 
 ## Introduction
 Welcome to the Linux Fundamentals for DevOps Engineers repository! This repository is designed to provide a comprehensive guide for individuals looking to build or strengthen their Linux knowledge specifically tailored for DevOps roles. As a DevOps engineer, Linux is a cornerstone of your toolkit, providing the foundation for managing servers, automating deployments, and handling cloud infrastructures.
